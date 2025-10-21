@@ -3,12 +3,12 @@ import os
 
 app = Flask(__name__)
 
-#log in page
+# Route para sa login page
 @app.route('/')
 def login():
     return render_template('login.html')
 
-#register page
+# Route para sa register page
 @app.route('/register')
 def register():
     return render_template('register.html')
