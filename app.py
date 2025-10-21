@@ -3,14 +3,16 @@ import os
 
 app = Flask(__name__)
 
+#log in page
 @app.route('/')
 def login():
     return render_template('login.html')
 
-@app.route('/index')
-def index():
-    return render_template('index.html')
+#register page
+@app.route('/register')
+def register():
+    return render_template('register.html')
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(debug=True, port=port)
