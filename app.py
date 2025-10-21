@@ -1,12 +1,16 @@
 from flask import Flask, render_template
+import os
 
 app = Flask(__name__)
 
-# This route will show the login page
 @app.route('/')
-def home():
-    # This command tells Flask to find 'login.html' inside the 'templates' folder and show it.
+def login():
     return render_template('login.html')
 
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.getenv('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
