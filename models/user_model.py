@@ -3,7 +3,7 @@ from database import datetime, timezone
 
 class Student (db.model):
     __tablename__="Student"
-
+# comment
     id=db.Column(db.Integer, primary_key=True)
     fname=db.Column(db.String(50))
     mname=db.Column(db.String(50))
