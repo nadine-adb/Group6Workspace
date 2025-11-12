@@ -1,0 +1,27 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# Dependency caches
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+
+# Logs and temporary files
+*.log
+.DS_Store
