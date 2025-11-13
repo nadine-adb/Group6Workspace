@@ -15,8 +15,8 @@ class Student (db.Model):
     phone_number=db.Column(db.String(20), unique=True)
     address=db.Column(db.Text)
     student_id=db.Column(db.String(50), unique=True)
-    created_at=db.Column(db.Datetime, default=datetime.now (timezone.utc))
-    updated_at=db.Column(db.Datetime, default=datetime.now (timezone.utc), onupdate= datetime.now (timezone.utc))
+    created_at=db.Column(db.DateTime, default=datetime.now (timezone.utc))
+    updated_at=db.Column(db.DateTime, default=datetime.now (timezone.utc), onupdate= datetime.now (timezone.utc))
 
     def __repr__(self):
         return f"Student {self. sname}>"
