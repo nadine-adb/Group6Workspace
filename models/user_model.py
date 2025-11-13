@@ -1,5 +1,5 @@
 from models.db import db
-from database import datetime, timezone
+from datetime import datetime, timezone
 
 class Student (db.model):
     __tablename__="Student"
