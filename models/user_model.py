@@ -1,7 +1,7 @@
 from models.db import db
 from datetime import datetime, timezone
 
-class Student (db.model):
+class Student (db.Model):
     __tablename__="Student"
 # comment
     id=db.Column(db.Integer, primary_key=True)
